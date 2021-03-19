@@ -55,3 +55,96 @@ git commit -m "label" file1
 git status
 git log
 git push
+
+------------------
+TOUCH, CAT, VI
+--------------
+
+touch
+-----
+touch file1
+touch file2 file3 file4
+
+
+CAT
+---
+cat > file5
+....
+....
+ctrl+d
+
+cat file5
+
+cat >> file5
+....
+....
+ctrl+d
+
+VI
+---
+
+vi file6
+--------
+esc i
+...
+...
+...
+esc :w
+esc :q
+or
+esc :wq!
+
+mkdir dir1
+cd dir1
+touch f1 f2 f3
+cd ..
+
+rm -rf file2
+
+
+git clone https://github.com/polarapu/batch65.git
+ls
+cd batch65
+touch name
+git status
+git add name
+git commit -m "sample commit" name
+git push
+
+
+
+git push
+remote: Permission to polarapu/batch65.git denied to pajayvarma.
+fatal: unable to access 'https://github.com/polarapu/batch65.git/': The requested URL returned error: 403
+
+git push
+git pull --rebase
+git push
+
+LOG
+---
+git log
+git log -5
+git log --oneline
+git log --online -5
+git log --author=priyatham
+git log --author=priyatham -n
+git log --author=priyatham --oneline
+git log --author=priyatham --oneline -n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
