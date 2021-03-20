@@ -1,0 +1,19 @@
+Git commands:
+git status
+git log
+git add filename
+git commit -m"text" filename
+git log
+git push
+git pull
+git clone
+git reset --soft cid
+git reset --mixed cid
+git reset head filename
+git diff
+git branch
+git log --until=yy-mm-dd
+git log --after=yy-mm-dd --before=yy-mm-dd
+git checkout branch
+git branch branchname
+
