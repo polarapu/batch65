@@ -132,7 +132,32 @@ git log --author=priyatham -n
 git log --author=priyatham --oneline
 git log --author=priyatham --oneline -n
 
+git log --since=yy-mm-dd
+or
+git log --after=yy-mm-dd
 
+git log --until=yy-mm-dd
+or
+git log --before=yy-mm-dd
+
+git log --since=yy-mm-dd --until=yy-mm-dd
+or
+git log --after=yy-mm-dd --before=yy-mm-dd
+
+git log --after="yy-mm-dd 20:30" --before="yy-mm-dd 06:10"
+
+git log --grep="msg"
+
+git log -- file-name
+
+
+git branch
+git branch branch-name
+git checkout branch-name
+
+git merge branch-name
+
+git branch -d branch-name
 
 
 
