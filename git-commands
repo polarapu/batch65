@@ -82,6 +82,7 @@ ctrl+d
 
 VI
 ---
+test line1
 
 vi file6
 --------
@@ -115,14 +116,7 @@ git push
 
 git push
 remote: Permission to polarapu/batch65.git denied to pajayvarma.
-fatal: unable to access 'https://github.com/polarapu/batch65.git/': The requested URL returned error: 403
-
-git push
-git pull --rebase
-git push
-
-LOG
----
+sample line1
 git log
 git log -5
 git log --oneline
@@ -139,6 +133,7 @@ git log --after=yy-mm-dd
 git log --until=yy-mm-dd
 or
 git log --before=yy-mm-dd
+git log
 
 git log --since=yy-mm-dd --until=yy-mm-dd
 or
@@ -161,14 +156,6 @@ or
 git checkout -b branch-name)
 
 git merge branch-name
-
-git branch -d branch-name  (local)
-
-git push origin branch-name
-or
-git push path/of/c-repo branch-name
-
-git diff branch1 branch2
 
 git push origin -d branch-name  (central repo)
 
@@ -199,10 +186,12 @@ git stash drop
 git stash drop stash@{x}
 
 
-TAG
 ====
 git tag
 git tag tag-name  (latest HEAD commit)
+file1
+file2
+file3
 
 git tag tag-name CID
 git checkout tag-name
@@ -211,7 +200,6 @@ git push origin tag-name
 or
 git push --tags
 or
-git push origin tag-name tag-name
 
 git tag -d tag-name
 
