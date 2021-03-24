@@ -56,22 +56,6 @@ git status
 git log
 git push
 
-<<<<<<< HEAD
-=======
-git clone https://github.com/polarapu/batch65.git
-ls
-cd batch65
-touch file1
-ls
-git status
-git add file1
-git status
-git commit -m "label" file1
-git status
-git log
-git push
-
->>>>>>> 5d2d2fe (update commands)
 ------------------
 TOUCH, CAT, VI
 --------------
@@ -171,11 +155,73 @@ git branch
 git branch branch-name
 git checkout branch-name
 
+(git branch branch-name
+git checkout branch-name
+or
+git checkout -b branch-name)
+
 git merge branch-name
 
-git branch -d branch-name
+git branch -d branch-name  (local)
 
-<<<<<<< HEAD
+git push origin branch-name
+or
+git push path/of/c-repo branch-name
+
+git diff branch1 branch2
+
+git push origin -d branch-name  (central repo)
+
+git cherry-pick cid  (single commit backporting)
+
+STASH
+------
+git stash list
+git stash save "label"
+git stash list
+git stash show stash@{x}
+git stash show -p stash@{x}
+
+
+POP -cut
+----
+git stash pop
+git stash pop stash@{x}
+
+APPLY  -copy
+-----
+git stash apply
+git stash apply stash@{x}
+
+DROP  -delete
+----
+git stash drop
+git stash drop stash@{x}
+
+
+TAG
+====
+git tag
+git tag tag-name  (latest HEAD commit)
+
+git tag tag-name CID
+git checkout tag-name
+
+git push origin tag-name
+or
+git push --tags
+or
+git push origin tag-name tag-name
+
+git tag -d tag-name
+
+git push origin -d tag-name
+
+
+Revert
+Amend
+alias
+.gitignore
 
 
 
@@ -186,9 +232,3 @@ git branch -d branch-name
 
 
 
-
-
-
-
-=======
->>>>>>> 5d2d2fe (update commands)
